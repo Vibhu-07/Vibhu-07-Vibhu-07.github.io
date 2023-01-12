@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="width=device-width, initial-scale=1.0, Vibhu Sikka">
+    <title>Order form</title>
+    <style>
+        .border {
+            border: 1px solid black;
+        }
+
+        .border td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="color: Red;">Order Form</h4>
+    <fieldset>
+        <legend>Basic Information</legend>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name" value="Vibhu" disabled size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Email:</label></td>
+                <td><input size="30" type="text" name="Email" id="mail" value="sikk0006@algonquinlive.com" placeholder="sikk0006@algonquinlive.com"></td>
+            </tr>
+            <tr>
+                <td class="centre"><label class="centre" for="address">Address:</label></td>
+                <td><textarea name="address" id="address" cols="25" rows="6"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="PC">Postcode:</label></td>
+                <td><input type="text" name="Postcode" id="PC"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Product Information</legend>
+        <table class="border">
+            <tr class="border">
+                <th>Product</th>
+                <th>Part Number</th>
+                <th>&nbsp;Quantity &nbsp;</th>
+                <th>Unit Price</th>
+                <th style="width:5cm;">Subtotal</th>
+            </tr>
+            <tr class="border">
+                <td>Box</td>
+                <td>AC100</td>
+                <td></td>
+                <td>$5</td>
+                <td></td>
+            </tr>
+            <tr class="border">
+                <td>Coffee Table</td>
+                <td>AC200</td>
+                <td></td>
+                <td>$100</td>
+                <td></td>
+            </tr>
+            <tr class="border">
+                <td>Chair</td>
+                <td>AC300</td>
+                <td></td>
+                <td>$150</td>
+                <td></td>
+            </tr>
+            <tr class="border">
+                <td>Desk</td>
+                <td>AC400</td>
+                <td></td>
+                <td>$120</td>
+                <td></td>
+            </tr>
+            <tr class="border">
+                <td>Computer Table</td>
+                <td>AC500</td>
+                <td></td>
+                <td>$130</td>
+                <td></td>
+            </tr>
+            <tr class="border">
+                <td colspan="4" style="text-align: right;">Total:</td>
+                <td></td> 
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <p style="margin-bottom: 0;"><strong>Credit Card Information</strong></p><br>
+    <p style="margin: 0;">Card Type</p>
+        <table>
+            <tr>
+                <td><input type="radio" name="Mastercard" id="Mastercard"></td>
+                <td><label for="Mastercard">Mastercard &nbsp;&nbsp;</label></td>
+                <td><label for="card">Card Number:</label></td>
+                <td><input type="text" name="card" id="card"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="Visa" id="Visa"></td>
+                <td><label for="Visa">Visa</label></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="Giftcard" id="Giftcard"></td>
+                <td><label for="Giftcard">Gift Card &nbsp;&nbsp;</label></td>
+                <td><label for="expiry">Expiry date:</label></td>
+                <td><input type="date" name="expiry" id="expiry"></td>
+            </tr>
+        </table>
+        <strong style="position: relative; bottom: 1.3cm;">Delivery Address: </strong>
+        <textarea name="Daddress" id="Daddress" cols="25" rows="6"></textarea><br><br>
+        <input type="submit" value="Send Order">
+        <input type="reset" value="Clear form">
+</body>
+</html>
